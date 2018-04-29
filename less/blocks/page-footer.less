@@ -21,7 +21,7 @@
   margin-top: 22px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -32,9 +32,23 @@
   .page-footer__logo {
     display: block;
     margin-right: 78px;
+
+    &--link:hover svg,
+    &--link:focus svg {
+      fill: #46c1ae;
+    }
+
+    &--link:active svg {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__logo-image {
+    width: 102px;
+    height: 34px;
+  }
+
+  .page-footer__logo svg {
     width: 102px;
     height: 34px;
   }
@@ -49,7 +63,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: @desktop-width) {
   .page-footer__wrapper {
     max-width: 1050px;
     margin: 0 auto;
