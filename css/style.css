@@ -708,7 +708,7 @@ img {
 }
 .page-main__custom-make {
   padding-top: 22px;
-  padding-bottom: 44px;
+  padding-bottom: 51px;
 }
 @media (min-width: 768px) {
   .page-main__header {
@@ -2616,7 +2616,7 @@ img {
   }
 }
 .custom-make__info {
-  margin-bottom: 14px;
+  margin-bottom: 7px;
   font-size: 13px;
 }
 @media (min-width: 768px) {
@@ -2653,8 +2653,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 .form__wrapper--last {
   margin-top: 0;
@@ -2670,8 +2670,29 @@ img {
           flex-direction: column;
   border: none;
 }
+.form__legend-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__legend-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #62d1ba;
+}
 .form__legend {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin: 14px 0;
+  margin-right: 20px;
   padding: 0;
   font-style: normal;
   font-size: 17px;
@@ -2872,7 +2893,7 @@ img {
 }
 .form__text--phone {
   margin-top: -23px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 .form__text + .form__text-icon {
   position: absolute;
@@ -2895,6 +2916,7 @@ img {
 }
 .form__option-textarea {
   margin-top: 11px;
+  margin-bottom: 6px;
 }
 .form__textarea {
   -webkit-box-flex: 1;
@@ -2978,6 +3000,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .form__legend-wrapper::after {
+    display: none;
   }
   .form__legend {
     position: absolute;
@@ -3071,6 +3096,7 @@ img {
   }
   .form__option-textarea {
     margin-top: 9px;
+    margin-bottom: 0;
   }
   .form__textarea {
     padding: 14px;
